@@ -69,6 +69,8 @@ be uploaded by this user. In any case, you need to generate a personal access to
 you wish to use. In GitHub, go to your profile picture in the top right, Settings, Developer
 Settings, Personal Access Tokens, and Generate new token. You must give the token access to "repo".
 
+NOTE: The user must also have administrator privileges to the repo.
+
 ### Interactive Mode (interactive)
 There are a few interactive prompts to help you ensure you're doing the right operations. You can
 disable the prompts and generally accept them if you're sure you're doing it right.
@@ -107,7 +109,7 @@ but defaults are provided.
 
 ### Skipped States (skippedStates)
 This is an array of the states for issues that just shouldn't be imported at all. To see the full list, run
-with `$states`, but defaults are provided.
+with `$states`. By default, nothing is skipped.
 
 ### State Table (stateTable)
 By default, we use the table named IssueState. If this is not the name of the table where you have the states
@@ -116,18 +118,18 @@ used to list out the states in the `$states` command.
 
 ## Stopping mid-run
 It's extremely important to not interrupt the process as it's running. If you need to stop the
-process midway, put the word "stop" (in the control.txt file), and it will safely
+process midway, put the word "stop" in the control.txt file, and it will safely
 shut down. If you simply kill the process, you risk getting a duplicate issue, as the tool keeps an
 internal database of what has and has not been uploaded already, so the process is generally
-resumable midway.
+resumable midway. After each run, you may wish to clear out the model.json file, once you're certain
+everything ran correctly.
 
 ## Estimated time
 Due to rate limiting restrictions, this is intentially a slow process. The GitHub API only allows
 one POST request per second, and so at a minimum, each issue and comment will take 1 second each.
 Generally speaking, this is the bottleneck, though there is also a general request rate limit of 5000
 requests per hour. The script will automatically limit itself within these tolerances, and unfortunately
-there is no way to speed the script up beyond the programmed limits. The script will constantly display
-an estimated time remaining to give you an idea of what's left to be done.
+there is no way to speed the script up beyond the programmed limits.
 
 ## Resuming from an interrupted state
 It is fully supported to resume the upload mid-way. Every action is logged internally, and actions
