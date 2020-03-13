@@ -1,0 +1,46 @@
+JESUS CHRIST THIS TOOK LONGER TO WRITE THAN I EXPECTED LICENSE V1.0
+
+This software is open source but not free software. You are not permitted
+to distribute, use, or otherwise copy this software unless you meet the
+requirements stated below.
+
+Open Source and Non Commercial Use
+If you are a developer of an open source project (defined as being generally
+and freely available to the public for use) or you are otherwise not selling
+software related to the Github repo you intend to use this software for,
+you are given a free license to download and use the software to import
+issues into your public repos in which you are not making money from. You are also
+allowed to run this software against a private test repository, which is not meant
+to be used after testing is completed as well, in order to validate that this
+software suits your needs.
+
+Closed Source and Commercial Use
+If the Github repo which you are importing issues into is private (other than for
+test purposes) or you are a commercial entity that makes money directly or indirectly
+from the associated repository, you are required to purchase a license. Licenses are
+priced based on the number of YouTrack users each, and one license covers importing
+from a single YouTrack installation into any number of Github repositories, private or
+public. There is no limit to the number of times you can run
+the software, and the license granted to you for a given repository does not expire.
+You may use any version of the software you wish, the license is tied to the YouTrack
+installation, not the version of the software. Licenses are priced as follows:
+
+- Users 1-100: $4 each
+- Users 101-200: $3 each
+- Users 201-300: $2 each
+- Users 301+: $1 each
+
+If you continue running the software, ensure that the number of users does not increase,
+or you must pay for a larger license.
+
+Contact the software author for payment instructions.
+
+Licenses do not include support, please ensure that the software meets your needs
+by running it against a private test repository before purchasing licenses.
+
+Software Modifications
+You are allowed to modify the software to fit your needs, but you are not allowed to
+further distribute the software.
+
+Distribution
+You are not allowed to distribute the software publicly.
