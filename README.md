@@ -14,7 +14,7 @@ extension. You'll need to install Java, download and install MethodScript,
 and put the MSXodus extension in the extensions folder. Most versions
 of Java work, see https://methodscript.com/ for instructions on installation
 of MethodScript.
-The source for the MSXodus extension can be found [here](example.com) and the
+The source for the MSXodus extension can be found [here](https://github.com/LadyCailin/MSXodus/releases) and the
 jar should be put in the MethodScript/extensions folder in your installation
 of MethodScript.
 
